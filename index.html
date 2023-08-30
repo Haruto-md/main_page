@@ -32,6 +32,7 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebTestDir.loader.js";
       var config = {
+        Module:{TOTAL_STACK:6*1024*1024},
         dataUrl: buildUrl + "/WebTestDir.data.unityweb",
         frameworkUrl: buildUrl + "/WebTestDir.framework.js.unityweb",
         codeUrl: buildUrl + "/WebTestDir.wasm.unityweb",
@@ -89,5 +90,6 @@
         unityInstance.Module.WebXR.toggleVR();
       }, false);
     </script>
+    <script src="processor.js"></script>
   </body>
 </html>
